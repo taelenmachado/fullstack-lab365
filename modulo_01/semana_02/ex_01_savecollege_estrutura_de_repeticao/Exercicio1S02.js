@@ -43,6 +43,15 @@ const aluno4 = {
     matematica: 2,
 } 
 
+const aluno5 = {
+    nome: "Sabrina",
+    altura: 1.63,
+    idade: 26,
+    sexo: "feminino",
+    sala: 3,
+    matematica: 9,
+}
+
 function verificaAprovacao(aluno) {
     if(aluno.matematica >= 7) {
         console.log(aluno.nome + ": Aprovado");
@@ -53,7 +62,7 @@ function verificaAprovacao(aluno) {
     }
 }
 
-const alunos = [aluno0, aluno1, aluno2, aluno3, aluno4];
+const alunos = [aluno0, aluno1, aluno2, aluno3, aluno4, aluno5];
 
 
 alunos.forEach( (aluno) => {
