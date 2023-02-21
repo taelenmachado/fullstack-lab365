@@ -1,0 +1,60 @@
+
+img {
+    border-radius: 50%;
+    height: 150px;
+}
+    
+
+/* Flex Container */
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid rgb(104, 102, 104);
+    padding: 15px;
+    box-shadow: 10px 10px rgb(211, 144, 211);
+
+}
+
+.grow0 {
+	flex-grow: 1;
+}
+
+.grow1 {
+	flex-grow: 2;
+}
+
+/* Flex Item */
+.item {
+	margin: 5px;
+	background: rgb(255, 255, 255);
+	text-align: right;
+	font-size: 1.5em;
+}
+#name {
+    font-style:normal;
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(211, 144, 211);
+}
+#bio {
+    font-style:italic;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(104, 102, 104);
+}
+
+#location {
+    font-style:normal;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(104, 102, 104);
+}
+
+#html_url {
+    font-style:italic;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(224, 169, 224);
+}
