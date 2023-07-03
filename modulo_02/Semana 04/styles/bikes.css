@@ -1,0 +1,8 @@
+.body2 {
+    display: flexbox;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+    background-color: white;
+}
