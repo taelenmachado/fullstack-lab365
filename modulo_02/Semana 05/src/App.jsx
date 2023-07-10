@@ -1,22 +1,39 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-import { Geometrics } from './components/Geometrics'
+import { Events } from './components/Events/Events';
+import { Login } from './components/Login';
+import { Counters } from './components/Effect/Counters';
+import { Cephook } from './components/Effect/Cephook';
+import { Error } from './components/Error';
+import { ComponenteA } from './components/Contexto/ComponenteA';
+import { Google } from './components/Google/Google';
 
-import { Round } from './components/Round'
-import { Square } from './components/Square';
-import { Triangle } from './components/Triangle';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
 
-      <Geometrics></Geometrics>
+      <nav className='menu'>
+      {/*   <Link to='/events'>Eventos</Link>
+        <Link to='/login'>Login</Link>
+        <Link to='/counters'>Contadores</Link>
+        <Link to='/cep'>CEP</Link>
+        <Link to='/google'>Google</Link>
+      <Link to='/componentea'>Componente A (Contexto)</Link> */}
+      </nav>
 
-      <Round></Round>
-      <Square></Square>
-      <Triangle></Triangle>
+      <Routes>
+     {/*    <Route path="/events" element={<Events />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/counters" element={<Counters />} />
+        <Route path="/cep" element={<Cephook />} />
+        <Route path="*" element={<Error />} />
+      <Route path="/componentea" element={<ComponenteA/>} /> */}
+      <Route path="/google" element={<Google/>} />
+      </Routes>
 
-    </div>
+    </Router>
   );
 }
 

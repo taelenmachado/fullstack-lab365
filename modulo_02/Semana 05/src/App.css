@@ -1,2 +1,8 @@
-.App {}
+.App { }
+
+.menu {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
 
